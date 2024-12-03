@@ -1,0 +1,95 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#top-bar {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#info-bar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px auto 140px;
+    padding: 10px;
+    background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0 ), #990000 ); 
+}
+
+#info-bar > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+}
+
+#info-bar > div > * {
+    margin: 0;
+    padding: 0;
+}
+
+#info-bar button {
+    height: 45%;
+    align-self: center;
+    border-radius: 30px;
+}
+
+#profile-avatar {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-tag {
+    color: rgb(200, 200, 200);
+}
+
+#follows-bar {
+    width: 100%;
+    overflow-x: scroll;
+    height: 180px;
+    display: flex;
+    gap: 5px;
+    border-bottom: 10px solid rgb(200, 200, 200);
+    padding: 15px;
+    background-image: linear-gradient( #990000, #CC5050 );
+}
+
+#howl-area {
+    padding-top: 10px;
+}
+
+@media screen and (max-width : 850px) {
+    #top-bar {
+        height: 175px;
+    }
+}
+
+@media screen and (max-width : 750px) {
+    #top-bar {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width : 650px) {
+    #top-bar {
+        height: 125px;
+    }
+}
+
+@media screen and (max-width : 550px) {
+    #top-bar {
+        height: 100px;
+    }
+
+    #profile-avatar {
+        width: 80%;
+    }
+}

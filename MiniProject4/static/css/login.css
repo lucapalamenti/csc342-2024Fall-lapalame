@@ -1,0 +1,67 @@
+#header-right {
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#header-right div {
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+#header-right div:first-of-type {
+    width: 20px;
+}
+#header-right div:last-of-type {
+    width: 80px;
+}
+
+#content {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#content h3 {
+    width: 100%;
+    text-align: center;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#login-form input {
+    width: 100%;
+    padding-left: 10px;
+    color: black;
+}
+
+#login-form button {
+    width: 50%;
+    border-radius: 15px;
+}
+
+#login-error {
+    background-color: #AAAAAA;
+    border: 4px solid #999999;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+@media screen and (max-width : 550px) {
+    #content {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    #header-right > * {
+        display: none;
+    }
+}

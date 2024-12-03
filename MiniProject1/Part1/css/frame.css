@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-width: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- <<<<< HEADER >>>>> ----- */
+
+header {
+    width: 100%;
+    min-width: 900px;
+    height: 160px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-bar-background {
+    background-image: linear-gradient(red, yellow);
+}
+
+.header-bar {
+    background-image: url("../media/ratTileBackgroundROY.png");
+    background-repeat: repeat;
+    height: 100px;
+    background-size: auto 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-size: 30pt;
+    font-family: 'Crazy', 'Segoe UI', sans-serif;
+    -webkit-text-stroke: 3px black;
+}
+
+h1 {
+    margin: 0 20px;
+    padding-top: 15px;
+    white-space: nowrap;
+}
+
+header nav {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: yellow;
+    border-bottom: 5px solid black;
+    border-top: solid black 5px;
+}
+
+header a.button {
+    padding: 10px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+    font-family: 'Crazy Gradient', 'Segoe UI', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-justify: center;
+}
+
+a.button:hover {
+    background-color: #f3f300;
+}
+
+a.button:active {
+    background-color: #e3e300;
+}
+
+/* ----- <<<<< MAIN >>>>> ----- */
+
+main {
+    width: 100%;
+    min-height: calc( 100vh - 100px );
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas:
+        ". . ."
+        "footer footer footer";
+    margin-top: 160px;
+    background-image: linear-gradient(#eeeeee,#888888);
+}
+
+menu {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    background-image: url("../media/ratBackground.png");
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.side-bar-outside {
+    background-image: linear-gradient( to right, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0) );
+    border-right: 3px solid black;
+}
+
+aside {
+    height: 100%;
+    background-image: url("../media/ratTileBackgroundGrey.png");
+    background-size: 140%;
+}
+
+/* ----- <<<<< FOOTER >>>>> ----- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+    background-image: linear-gradient(yellow, red);
+    grid-area: footer;
+}
+
+footer .footer-bar-background {
+    background-image: url("../media/ratTileBackgroundROY.png");
+    background-size: auto 100%;
+    border-bottom: 3px solid black;
+    background-repeat: repeat-x;
+    overflow-y: hidden;
+}
+
+footer h6 { height: 50px;
+    margin: 0;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+
+/* ----- <<<<< GENERAL >>>>> ----- */
+
+.flip-hz {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.flip-vt {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.remove-vertical-borders {
+    border-left: 0px !important;
+    border-right: 0px !important;
+}

@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    margin: 0;
+    font-family: Callie Chalk Font, monospace, sans-serif;
+    background-color: rgb(34, 34, 34);
+}
+
+#bg-image {
+    height: 100%;
+    min-height: 800px;
+    background-image: url( "../images/background.png" );
+    background-position: center;
+    filter: blur( 5px );
+}
+
+.blackboard-bg {
+    background-image: url( "../images/blackboard-bg-1.png" );
+}
+
+aside {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+aside button {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(165, 91, 42);
+    border-bottom: 5px solid rgb(204, 113, 52);
+    border-top: 3x solid rgb(139, 78, 37);
+    margin: 5px;
+    background-size: 400%;
+}
+aside button#theme-1 {
+    background-image: url( "../images/blackboard-bg-1.png" );
+}
+aside button#theme-2 {
+    background-image: url( "../images/blackboard-bg-2.png" );
+}
+aside button#theme-3 {
+    background-image: url( "../images/blackboard-bg-3.png" );
+}
+
+main {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate( -50%, 0% );
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px auto 80px;
+    gap: 10px;
+}
+
+section {
+    border: 10px solid rgb(165, 91, 42);
+    border-bottom: 15px solid rgb(204, 113, 52);
+    border-top: 10px solid rgb(139, 78, 37);
+    background-size: cover;
+    background-position-x: center;
+}
+
+button {
+    font-family: inherit;
+    font-size: 35pt;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+}
+button:hover {
+    filter: brightness( 0.75 );
+}
+button:active {
+    filter: brightness( 0.5 );
+}
+
+/* ----- <<<<< TOP BAR >>>>> ----- */
+
+#header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-column: 1 / 3;
+    text-align: end;
+    font-size: 30pt;
+    font-weight: bold;
+    padding: 5px;
+}

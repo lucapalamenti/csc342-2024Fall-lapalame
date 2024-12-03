@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Activity</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+    <h1>Welcome to your server</h1>
+    <div class="container">
+        <form action="/submit/get" method="GET">
+            <h2>GET</h2>
+            <label for="mytext1">Text Input:</label>
+            <input type="text" name="mytext1" id="mytext1">
+            <input type="password" name="mypassword1" id="mypassword1">
+            <input type="email" name="myemail1" id="myemail1">
+            <input type="number" name="mynumber1" id="mynumber1">
+            <input type="date" name="mydate1" id="mydate1">
+            <input type="text" name="mytextarea1" id="mytextarea1">
+            <div>
+                <input type="radio" id="myradio1-1" name="myradio1" value="radio1value1">
+                <label for="myradio1-1">Radio Option 1</label>
+                <input type="radio" id="myradio2-1" name="myradio1" value="radio2value1">
+                <label for="myradio2-1">Radio Option 2</label>
+                <input type="radio" id="myradio3-1" name="myradio1" value="radio3value1">
+                <label for="myradio3-1">Radio Option 3</label>
+            </div>
+            <div>
+                <input type="checkbox" id="mycheckbox1" name="mycheckbox1">
+                <label for="mycheckbox1">Checkbox:</label>
+            </div>
+            <select name="myselect1" id="myselect1">
+                <option value="option1value1">Option 1</option>
+                <option value="option2value1">Option 2</option>
+                <option value="option3value1">Option 3</option>
+            </select>
+            <input type="submit" value="Submit1">
+        </form>
+
+        <form action="/submit/post/url" method="POST">
+            <h2>POST URL-encoded</h2>
+            <label for="mytext2">Text Input:</label>
+            <input type="text" name="mytext2" id="mytext2">
+            <input type="password" name="mypassword2" id="mypassword2">
+            <input type="email" name="myemail2" id="myemail2">
+            <input type="number" name="mynumber2" id="mynumber2">
+            <input type="date" name="mydate2" id="mydate2">
+            <input type="text" name="mytextarea2" id="mytextarea2">
+            <div>
+                <input type="radio" id="myradio1-2" name="myradio2" value="radio1value2">
+                <label for="myradio1-2">Radio Option 1</label>
+                <input type="radio" id="myradio2-2" name="myradio2" value="radio2value2">
+                <label for="myradio2-2">Radio Option 2</label>
+                <input type="radio" id="myradio3-2" name="myradio2" value="radio3value2">
+                <label for="myradio3-2">Radio Option 3</label>
+            </div>
+            <div>
+                <input type="checkbox" id="mycheckbox2" name="mycheckbox2">
+                <label for="mycheckbox2">Checkbox:</label>
+            </div>
+            <select name="myselect2" id="myselect2">
+                <option value="option1value2">Option 1</option>
+                <option value="option2value2">Option 2</option>
+                <option value="option3value2">Option 3</option>
+            </select>
+            <input type="submit" value="Submit2">
+        </form>
+
+        <form action="/submit/post/url" method="POST">
+            <h2>POST Multipart</h2>
+            <label for="mytext3">Text Input:</label>
+            <input type="text" name="mytext3" id="mytext3">
+            <input type="password" name="mypassword3" id="mypassword3">
+            <input type="email" name="myemail3" id="myemail3">
+            <input type="number" name="mynumber3" id="mynumber3">
+            <input type="date" name="mydate3" id="mydate3">
+            <input type="text" name="mytextarea3" id="mytextarea3">
+            <div>
+                <input type="radio" id="myradio1-3" name="myradio3" value="radio1value3">
+                <label for="myradio1-3">Radio Option 1</label>
+                <input type="radio" id="myradio2-3" name="myradio3" value="radio2value3">
+                <label for="myradio2-3">Radio Option 2</label>
+                <input type="radio" id="myradio3-3" name="myradio3" value="radio3value3">
+                <label for="myradio3-3">Radio Option 3</label>
+            </div>
+            <div>
+                <input type="checkbox" id="mycheckbox3" name="mycheckbox3">
+                <label for="mycheckbox3">Checkbox:</label>
+            </div>
+            <select name="myselect3" id="myselect3">
+                <option value="option1value3">Option 1</option>
+                <option value="option2value3">Option 2</option>
+                <option value="option3value3">Option 3</option>
+            </select>
+            <input type="submit" value="Submit3">
+        </form>
+
+    </div>
+</body>
+
+</html>

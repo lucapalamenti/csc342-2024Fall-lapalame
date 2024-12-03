@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    width: calc( 100vw - 317px );
+    min-width: 800px;
+    min-height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+}
+
+/* ----- <<<<< MAIN >>>>> ----- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-image: linear-gradient( to right, rgb(170, 170, 170), rgb(228, 228, 228) );
+}
+
+/* ----- <<<<< DASHBOARD >>>>> ----- */
+
+#dashboard {
+    margin: 20px;
+    width: 1000px;
+    border: 5px solid rgb(102, 102, 102);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#dashboard > div {
+    border-right: 5px solid rgb(102, 102, 102);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        ". ."
+        "bottom bottom";
+}
+
+#dashboard > div:last-child {
+    border-right: 0;
+}
+
+#dashboard > div > * {
+    padding: 5px;
+    margin: 0;
+}
+
+#dashboard > div > h5 {
+    background-color: rgb(158, 158, 158);
+}
+
+#dashboard > div > p {
+    background-color: rgb(202, 202, 202);
+    grid-area: bottom;
+}
+
+/* ----- <<<<< REVENUE >>>>> ----- */
+
+#revenue {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    border-top: 3px solid rgb(92, 0, 0);
+    background-image: linear-gradient( to left, rgb(221, 199, 199), rgb(231, 105, 105) );
+}
+
+#revenue h4 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    border: 3px solid rgb(92, 0, 0);
+    border-top: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient( to left, rgb(173, 100, 100), rgb(156, 27, 27) );
+    font-size: 30pt;
+}
+
+#subtitle {
+    width: 500px;
+    height: 100%;
+    margin: 10px;
+    border: 3px solid rgb(92, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-image: linear-gradient( to left, rgb(173, 100, 100), rgb(156, 27, 27) );
+}
+
+#subtitle h5 {
+    margin: 0;
+    padding: 10px;
+    font-size: 12pt;
+}
+
+#subtitle div {
+    width: 100px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+#subtitle button {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    border-left: 3px solid rgb(92, 0, 0);
+}
+
+#subtitle div:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+#data-map {
+    color: #05bbdc;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
+    gap: 15px;
+    margin: 10px;
+    padding: 0;
+}
+
+#left-side-table {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#data-map table {
+    border-radius: 25px;
+    width: 400px;
+    height: 100%;
+    border: 3px solid rgb(92, 0, 0);
+    padding: 0;
+}
+
+#data-map table tbody {
+    background-color: white;
+    width: 400px;
+    height: 100%;
+    border: 30px solid rgb(0, 0, 0);
+}
+
+#data-map table tr {
+    height: 30px;
+}
+
+#data-map table tr:hover {
+    height: 60px;
+}
+
+#data-map table td {
+    border: 3px solid rgb(92, 0, 0);
+}
+
+#data-map img {
+    width: 100%;
+    border: 3px solid rgb(92, 0, 0);
+    border-radius: 25px;
+}
+
+.top-left {
+    border-top-left-radius: 20px;
+}
+
+.top-right {
+    border-top-right-radius: 20px;
+}
+
+.bottom-left {
+    border-bottom-left-radius: 20px;
+}
+
+.bottom-right {
+    border-bottom-right-radius: 20px;
+}
+
+/* ----- <<<<< GRID 1 >>>>> ----- */
+
+#grid-1 {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255,0,0,0.2);
+}
+
+.chart-grid {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient( to left, rgb(125, 148, 168), rgb(58, 136, 172));
+}
+
+.chart-grid h3 {
+    background-image: linear-gradient( to left, rgb(104, 129, 151), rgb(41, 113, 146));
+    color: white;
+    text-align: left;
+    font-size: 24pt;
+    margin: 0;
+    padding: 5px;
+    padding-left: 15px;
+    border: 3px solid rgb(0, 50, 92);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.chart-grid .div-labels {
+    width: fit-content;
+    padding: 10px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 3px solid rgb(0, 50, 92);
+    border-radius: 10px;
+    background-image: linear-gradient( to left, rgb(173, 193, 211), rgb(94, 176, 214));
+    position: relative;
+    bottom: 25px;
+}
+
+.chart-grid .div-labels > * {
+    margin: 0;
+    padding: 0;
+}
+
+.chart-grid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-grid img {
+    border: 3px solid rgb(0, 50, 92);
+    border-radius: 25px;
+    position: relative;
+    bottom: 15px;
+}
+
+/* ----- <<<<< GRID 2 >>>>> ----- */
+
+#grid-2 h4 {
+    color: white;
+    background-image: linear-gradient( to right, rgb(90, 90, 90), rgb(117, 117, 117));
+    font-size: 24pt;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    border: 3px solid rgb(61, 61, 61);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#grid-2 h6 {
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    font-size: 16pt;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 3px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    background-image: linear-gradient( to left, rgb(145, 145, 145), rgb(110, 110, 110));
+    position: relative;
+    bottom: 25px;
+}
+
+#tablist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#grid-2 .center-this {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tabs button {
+    width: 100px;
+    font-size: 20pt;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    border: 3px solid rgb(61, 61, 61);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tabs button:focus {
+    background-color: grey;
+}
+
+#img-1 {
+    width: 100%;
+    border-top: 3px solid rgb(61, 61, 61);
+}
+
+#img-2 {
+    width: 500px;
+    position: relative;
+    bottom: 75px;
+    border: 3px solid rgb(61, 61, 61);
+    border-radius: 25px;
+}

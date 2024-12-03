@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="css/keypad.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.cdnfonts.com/css/callie-chalk-font" rel="stylesheet">
+    <script src="js/continuous.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <!-- Background Image -->
+    <div id="bg-image"></div>
+
+    <aside>
+        <button id="theme-1" onclick="changeTheme('images/blackboard-bg-1.png')"></button>
+        <button id="theme-2" onclick="changeTheme('images/blackboard-bg-2.png')"></button>
+        <button id="theme-3" onclick="changeTheme('images/blackboard-bg-3.png')"></button>
+    </aside>
+
+    <main>
+        <!-- Box that is typed into -->
+        <section id="header" class="blackboard-bg">0</section>
+
+        <!-- Keypad section of page -->
+        <section id="keypad" class="blackboard-bg">
+            <button id="7-button" class="main-button number-button" value="7">7</button>
+            <button id="8-button" class="main-button number-button" value="8">8</button>
+            <button id="9-button" class="main-button number-button" value="9">9</button>
+            <button id="divide-button" class="operation-button" value="/">&divide;</button>
+
+            <button id="4-button" class="main-button number-button" value="4">4</button>
+            <button id="5-button" class="main-button number-button" value="5">5</button>
+            <button id="6-button" class="main-button number-button" value="6">6</button>
+            <button id="multiply-button" class="operation-button" value="*">x</button>
+
+            <button id="1-button" class="main-button number-button" value="1">1</button>
+            <button id="2-button" class="main-button number-button" value="2">2</button>
+            <button id="3-button" class="main-button number-button" value="3">3</button>
+            <button id="subtract-button" class="operation-button" value="-">-</button>
+
+            <button id="pm-button" class="main-button">&pm;</button>
+            <button id="0-button" class="main-button number-button" value="0">0</button>
+            <button id="decimal-button" class="main-button">.</button>
+            <button id="add-button" class="operation-button" value="+">+</button>
+
+            <button id="enter-button">ENTER</button>
+            <button id="clear-button">C</button>
+        </section>
+
+        <!-- History section of page -->
+        <section id="history" class="blackboard-bg"></section>
+
+        <button id="clear-history" class="blackboard-bg">Clear History</button>
+    </main>
+    
+</body>
+
+</html>

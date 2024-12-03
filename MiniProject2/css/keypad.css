@@ -1,0 +1,52 @@
+/* ----- <<<<< KEYPAD >>>>> ----- */
+
+#keypad {
+    height: max-content;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-row: 2 / 4;
+    gap: 10px;
+    padding: 10px;
+}
+
+.main-button {
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.85);
+    background-image: url( "../images/button-bg1.png" );
+}
+
+.operation-button {
+    color: rgba(255, 255, 0, 0.85);
+    background-image: url( "../images/button-bg2.png" );
+}
+
+.function-button {
+    color: rgba(255, 187, 0, 0.85);
+    background-image: url( "../images/button-bg3.png" );
+}
+.function-button > sup {
+    color: inherit;
+}
+
+#enter-button {
+    grid-column: 1 / 4;
+    padding-top: 10px;
+    color: rgba(166, 255, 0, 0.85);
+    background-image: url( "../images/button-bg-enter.png" );
+}
+
+#clear-button {
+    padding-top: 10px;
+    color: rgba(139, 251, 255, 0.85);
+    background-image: url( "../images/button-bg-C.png" );
+}
+
+#pullout-button {
+    position: absolute;
+    top: 50%;
+    transform: translate( -58px, -50% );
+    z-index: 1 !important;
+    border: 5px solid rgb(165, 91, 42);
+}

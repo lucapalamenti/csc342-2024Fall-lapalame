@@ -1,0 +1,165 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: fit-content;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+form section {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form section h1 {
+    font-size: 30pt;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.tabContent {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ----- <<<<< SENDER DETAILS SECTION >>>>> ----- */
+
+#sectionSender h1 {
+    background-color: rgb(123, 203, 230);
+    border: 5px solid rgb(53, 191, 255);
+    border-bottom: none;
+}
+
+#sectionSender > .tabContent {
+    border: 5px solid rgb(53, 191, 255);
+    background-color: lightblue;
+}
+
+#photoArea {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 350px auto;
+    grid-template-areas:
+        "photo photo"
+        ". .";
+}
+
+#photoArea img {
+    height: 100%;
+    border: 3px solid rgb(53, 191, 255);
+    grid-area: photo;
+}
+
+#imageFileButton {
+    background-color: rgb(113, 222, 255);
+    font-weight: bold;
+    text-align: center;
+}
+#imageFileButton label {
+    width: 96px;
+    text-align: center;
+}
+#imageFileButton input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+/* ----- <<<<< RECIPIENT DETAILS SECTION >>>>> ----- */
+
+#sectionRecipient > .tabContent {
+    border: 5px solid green;
+    background-color: greenyellow;
+}
+
+#sectionRecipient h1 {
+    border: 5px solid green;
+    border-bottom: none;
+    background-color: rgb(135, 201, 37);
+}
+
+#notifyArea {
+    padding: 5px;
+}
+
+#notifyChoose {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25px auto 25px auto 25px auto;
+    grid-template-rows: auto 25px;
+    grid-template-areas:
+        "label label label label label label"
+        ". . . . . .";
+}
+
+#notifyMainLabel {
+    grid-area: label;
+}
+
+#recipientEmailField {
+    display: none;
+}
+#recipientPhoneField {
+    display: none;
+}
+
+/* ----- <<<<< PAYMENT DETAILS SECTION >>>>> ----- */
+
+#sectionPayment > .tabContent {
+    border: 5px solid red;
+    background-color: pink;
+}
+
+#sectionPayment h1 {
+    border: 5px solid red;
+    border-bottom: none;
+    background-color: rgb(255, 139, 158);
+}
+
+#paymentCardNumberContainer {
+    width: 328px;
+    display: flex;
+    flex-direction: row;
+}
+
+#paymentCardNumberContainer input {
+    width: 100%;
+}
+
+/* ----- <<<<< GENERAL >>>>> ----- */
+
+.positionAbsolute {
+    position: absolute;
+}
+
+.twoByTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.checkboxLabel {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.checkboxLabel input[type='checkbox'] {
+    width: 25px;
+    height: 25px;
+}

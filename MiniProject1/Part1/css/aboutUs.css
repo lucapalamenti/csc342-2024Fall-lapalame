@@ -1,0 +1,23 @@
+main article {
+    display: flex;
+    flex-direction: column;
+    font-size: 16pt;
+    padding: 50px;
+}
+
+article h5 {
+    font-size: 20pt;
+    margin: 0px;
+    margin-bottom: 25px;
+}
+
+article p {
+    font-size: 16pt;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 25px;
+}
+
+#about-us {
+    scroll-margin-top: 150px;
+}

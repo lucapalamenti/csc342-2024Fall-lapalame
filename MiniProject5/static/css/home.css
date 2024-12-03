@@ -1,0 +1,41 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#post-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#post-area textarea {
+    height: 15vh;
+    max-height: 300px;
+    padding: 10px;
+    color: black;
+}
+
+#post-area button {
+    border-radius: 15px;
+}
+
+#characters-remaining {
+    width: 100%;
+    text-align: end;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width : 550px) {
+    * {
+        font-size: 13pt;
+    }
+
+    #content {
+        width: 100%;
+        padding: 0;
+    }
+}

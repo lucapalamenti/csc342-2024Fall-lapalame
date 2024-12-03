@@ -1,0 +1,23 @@
+.c-primary {
+    background-color: #CC0000;
+}
+
+.c-primary-dark {
+    background-color: #990000;
+}
+
+.c-primary-extra-dark {
+    background-color: #5E0000;
+}
+
+.c-primary-greyed {
+    background-color: #CC5050;
+}
+
+.c-primary-greyed-dark {
+    background-color: #995050;
+}
+
+.c-text-alt {
+    color: #6e2b2b;
+}

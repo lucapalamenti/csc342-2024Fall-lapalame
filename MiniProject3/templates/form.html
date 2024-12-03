@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/script.js" type="module" defer></script>
+    <script src="js/ui.js" type="module" defer></script>
+    <script src="js/test.js" type="module" defer></script>
+    <script src="js/inputQuerySelectors.js" type="module" defer></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <form action="submit" method="POST" autocomplete="off">
+
+            <!-- Sender Details Start -->
+            <section id="sectionSender">
+                <h1>Sender Details</h1>
+                <div class="tabContent">
+                    <div id="photoArea">
+                        <img src="images/default_sender_photo.png" alt="Couldn't load photo">
+                        <button type="button" id="imageFileButton">
+                            <label for="imageFileButton" class="positionAbsolute">File</label>
+                            <input type="file" name="file">
+                        </button>
+                        <input type="text" id="imageFileName" required>
+                    </div>
+                    <div class="twoByTwo">
+                        <label for="senderFirstname">First Name:</label>
+                        <label for="senderLastname">Last Name:</label>
+                        <input type="text" name="senderFirstname" id="senderFirstname" required>
+                        <input type="text" name="senderLastname" id="senderLastname" required>
+                    </div>
+                </div>
+            </section>
+            <!-- Sender Details End -->
+
+            <!-- Recipient Details Start -->
+            <section id="sectionRecipient">
+                <h1>Recipient Details</h1>
+                <div class="tabContent">
+                    <div class="twoByTwo">
+                        <label for="recipientFirstname">First Name:</label>
+                        <label for="recipientLastname">Last Name:</label>
+                        <input type="text" name="recipientFirstname" id="recipientFirstname" required>
+                        <input type="text" name="recipientLastname" id="recipientLastname" required>
+                    </div>
+
+                    <label for="recipientMessage">Message</label>
+                    <textarea name="recipientMessage" id="recipientMessage" required minlength="10"></textarea>
+
+                    <div id="notifyArea">
+                        <div id="notifyChoose">
+                            <label id="notifyMainLabel" for="notifyRecipient">Notify Recipient:</label>
+                            <input type="radio" name="notifyRecipient" value="email" id="selectEmail" required>
+                            <label for="selectEmail">Email</label>
+                            <input type="radio" name="notifyRecipient" value="SMS" id="selectSMS" required>
+                            <label for="selectSMS">SMS</label>
+                            <input type="radio" name="notifyRecipient" value="dontNotify" id="selectDontNotify" required>
+                            <label for="selectDontNotify">Do not notify</label>
+                        </div>
+    
+                        <div id="recipientEmailField">
+                            <label for="recipientEmail">Email:</label>
+                            <input type="email" name="recipientEmail" value="0@0" id="recipientEmail" required>
+                        </div>
+                        <div id="recipientPhoneField">
+                            <label for="recipientPhone">Phone Number:</label>
+                            <input type="text" name="recipientPhone" value=" " id="recipientPhone" required>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Recipient Details End -->
+
+            <!-- Payment Details Start -->
+            <section id="sectionPayment">
+                <h1>Payment Details</h1>
+                <div class="tabContent">
+                    <div class="twoByTwo">
+                        <label for="paymentCardType">Card Type:</label>
+                        <label for="paymentCardNumber">Card Number:</label>
+                        <select name="paymentCardType" id="paymentCardType" required>
+                            <option value="Visa">Visa</option>
+                            <option value="Mastercard">Mastercard</option>
+                            <option value="American Express">American Express</option>
+                        </select>
+                        <div id="paymentCardNumberContainer">
+                            <input type="number" name="paymentCardNumber0" id="paymentCardNumber0" placeholder="0000" required><p>-</p>
+                            <input type="number" name="paymentCardNumber1" id="paymentCardNumber1" placeholder="0000" required><p>-</p>
+                            <input type="number" name="paymentCardNumber2" id="paymentCardNumber2" placeholder="0000" required><p>-</p>
+                            <input type="number" name="paymentCardNumber3" id="paymentCardNumber3" placeholder="0000" required>
+                        </div>
+                        
+                    </div>
+
+                    <div class="twoByTwo">
+                        <label for="paymentExpiration">Expiration:</label>
+                        <label for="paymentCCV">CCV:</label>
+                        <input type="date" name="paymentExpiration" id="paymentExpiration" required>
+                        <input type="password" name="paymentCCV" id="paymentCCV" required>
+                    </div>
+                    
+                    <label for="paymentAmount">Amount ($):</label>
+                    <input type="number" name="paymentAmount" id="paymentAmount" required>
+                    
+                    <div class="checkboxLabel">
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <label for="terms">I agree to the Terms and Conditions</label>
+                    </div>
+                    
+                    <button type="submit">Send</button>
+                </div>
+            </section>
+            <!-- Payment Details End -->
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

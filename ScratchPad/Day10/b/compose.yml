@@ -1,0 +1,12 @@
+name: activity10b
+
+services:
+  app:
+    build: . # Dockerfile is in the same directory as this file
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - ./app.js:/app/app.js
+      - ./static:/app/static
+      - ./templates:/app/templates
