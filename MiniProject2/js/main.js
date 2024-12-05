@@ -319,6 +319,16 @@ function changeTheme( path ) {
     });
 }
 
+document.querySelector('#theme-1').addEventListener('click', () => {
+    changeTheme('images/blackboard-bg-1.png')
+});
+document.querySelector('#theme-2').addEventListener('click', () => {
+    changeTheme('images/blackboard-bg-2.png')
+});
+document.querySelector('#theme-3').addEventListener('click', () => {
+    changeTheme('images/blackboard-bg-3.png')
+});
+
 document.addEventListener('mousedown', ( e ) => {
     e.preventDefault();
 });
